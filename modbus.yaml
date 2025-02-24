@@ -1,0 +1,203 @@
+- name: CTA
+  type: tcp
+  host: 192.168.178.23
+  port: 502
+  sensors:
+    - name: CTA_Aussentemperatur
+      address: 2000
+      data_type: float32
+      swap: word
+      slave: 1
+      input_type: input
+      precision: 1
+      unit_of_measurement: °C
+      device_class: temperature
+    - name: CTA_Hz Vorlauftemperatur
+      address: 2002
+      data_type: float32
+      swap: word
+      slave: 1
+      input_type: input
+      precision: 1
+      unit_of_measurement: °C
+      device_class: temperature
+    - name: CTA_Hz Rücklauftemperatur
+      address: 2004
+      data_type: float32
+      swap: word
+      slave: 1
+      input_type: input
+      precision: 1
+      unit_of_measurement: °C
+      device_class: temperature
+    - name: CTA_Quelle Vorlauf
+      address: 2006
+      data_type: float32
+      swap: word
+      slave: 1
+      input_type: input
+      precision: 1
+      unit_of_measurement: °C
+      device_class: temperature
+    - name: CTA_Quelle Rücklauf
+      address: 2008
+      data_type: float32
+      swap: word
+      slave: 1
+      input_type: input
+      precision: 1
+      unit_of_measurement: °C
+      device_class: temperature
+    - name: CTA_Heizspeicher oben
+      address: 2014
+      data_type: float32
+      swap: word
+      slave: 1
+      input_type: input
+      precision: 1
+      unit_of_measurement: °C
+      device_class: temperature
+    - name: CTA_Heizspeicher unten
+      address: 2016
+      data_type: float32
+      swap: word
+      slave: 1
+      input_type: input
+      precision: 1
+      unit_of_measurement: °C
+      device_class: temperature
+    - name: CTA_Vorlauf HK1
+      address: 2018
+      data_type: float32
+      swap: word
+      slave: 1
+      input_type: input
+      precision: 1
+      unit_of_measurement: °C
+      device_class: temperature
+    - name: CTA_Vorlauf HK2
+      address: 2020
+      data_type: float32
+      swap: word
+      slave: 1
+      input_type: input
+      precision: 1
+      unit_of_measurement: °C
+      device_class: temperature
+    - name: CTA_Drehzahl Verdichter
+      address: 2030
+      data_type: float32
+      swap: word
+      slave: 1
+      input_type: input
+      precision: 0
+      unit_of_measurement: rps
+      device_class: frequency
+    - name: CTA_El. Leistungsaufnahme Verdichter
+      address: 2032
+      data_type: float32
+      swap: word
+      slave: 1
+      input_type: input
+      precision: 3
+      unit_of_measurement: kW
+      device_class: power
+    - name: CTA_Stromaufnahme Verdichter
+      address: 2034
+      data_type: float32
+      swap: word
+      slave: 1
+      input_type: input
+      precision: 1
+      unit_of_measurement: A
+      device_class: current
+    - name: CTA_Energie Heizen (ohne TWW)
+      address: 2068
+      data_type: uint32
+      swap: word
+      slave: 1
+      input_type: input
+      precision: 0
+      unit_of_measurement: kWh
+      device_class: energy
+    - name: CTA_Energie Total
+      address: 2074
+      data_type: uint32
+      swap: word
+      slave: 1
+      input_type: input
+      precision: 0
+      unit_of_measurement: kWh
+      device_class: energy
+    - name: CTA_Wärmeenergie Total
+      address: 2060
+      data_type: uint32
+      swap: word
+      slave: 1
+      input_type: input
+      precision: 0
+      unit_of_measurement: kWh
+      device_class: energy
+    - name: CTA_Raumtemperatur 2
+      address: 1082
+      data_type: float32
+      swap: word
+      slave: 1
+      input_type: holding
+      precision: 1
+      unit_of_measurement: °C
+      device_class: temperature
+    - name: CTA_Raumtemperatur 1
+      address: 1080
+      data_type: float32
+      swap: word
+      slave: 1
+      input_type: holding
+      precision: 1
+      unit_of_measurement: °C
+      device_class: temperature
+    - name: CTA_Sollwert Quelle
+      address: 1038
+      data_type: float32
+      swap: word
+      slave: 1
+      input_type: holding
+      precision: 1
+      unit_of_measurement: °C
+      device_class: temperature
+    - name: CTA_Raumtemperatur Test1
+      address: 1084
+      data_type: float32
+      swap: word
+      slave: 1
+      input_type: holding
+      precision: 1
+      unit_of_measurement: °C
+      device_class: temperature
+    - name: CTA_Raumtemperatur Test2
+      address: 1086
+      data_type: float32
+      swap: word
+      slave: 1
+      input_type: holding
+      precision: 1
+      unit_of_measurement: °C
+      device_class: temperature
+    - name: CTA_Raumtemperatur Test3
+      address: 1088
+      data_type: float32
+      swap: word
+      slave: 1
+      input_type: holding
+      precision: 1
+      unit_of_measurement: °C
+      device_class: temperature
+    - name: CTA_Raumtemperatur Test4
+      address: 1090
+      data_type: float32
+      swap: word
+      slave: 1
+      input_type: holding
+      precision: 1
+      unit_of_measurement: °C
+      device_class: temperature
