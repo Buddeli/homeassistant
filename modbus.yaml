@@ -165,39 +165,3 @@
       precision: 1
       unit_of_measurement: °C
       device_class: temperature
-    - name: CTA_Raumtemperatur Test1
-      address: 1084
-      data_type: float32
-      swap: word
-      slave: 1
-      input_type: holding
-      precision: 1
-      unit_of_measurement: °C
-      device_class: temperature
-    - name: CTA_Raumtemperatur Test2
-      address: 1086
-      data_type: float32
-      swap: word
-      slave: 1
-      input_type: holding
-      precision: 1
-      unit_of_measurement: °C
-      device_class: temperature
-    - name: CTA_Raumtemperatur Test3
-      address: 1088
-      data_type: float32
-      swap: word
-      slave: 1
-      input_type: holding
-      precision: 1
-      unit_of_measurement: °C
-      device_class: temperature
-    - name: CTA_Raumtemperatur Test4
-      address: 1090
-      data_type: float32
-      swap: word
-      slave: 1
-      input_type: holding
-      precision: 1
-      unit_of_measurement: °C
-      device_class: temperature
