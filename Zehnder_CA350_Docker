@@ -1,0 +1,37 @@
+services:
+  comfoair:
+    privileged: true
+    image: adorobis/hacomfoairmqtt:latest
+    container_name: comfoair
+    devices:
+      - "/dev/ttyCA350:/dev/ttyCA350"
+    environment:
+      - SOCAT=False
+      #- COMFOAIR_IP=192.168.1.50
+      #- COMFOAIR_PORT=502
+      - SERIAL_PORT=/dev/ttyCA350
+      - RS485_PROTOCOL=False
+      - REFRESH_INTERVAL=10
+      - ENABLE_PC_MODE=False
+      - DEBUG=False
+      - FAN_OUT_ABSENT=15
+      - FAN_OUT_LOW=30
+      - FAN_OUT_MID=60
+      - FAN_OUT_HIGH=90
+      - FAN_IN_ABSENT=15
+      - FAN_IN_LOW=30
+      - FAN_IN_MID=60
+      - FAN_IN_HIGH=90
+      - SETUP_FAN_LEVELS_AT_START=True
+      - MQTT_SERVER=192.168.178.43
+      - MQTT_PORT=1883
+      - MQTT_KEEPALIVE=45
+      - MQTT_USER=your_mqtt-user
+      - MQTT_PASSWORD=your_safe_password
+      - HA_ENABLE_AUTO_DISCOVERY_SENSORS=True
+      - HA_ENABLE_AUTO_DISCOVERY_CLIMATE=True
+      - HA_AUTO_DISCOVERY_DEVICE_ID=ca350
+      - HA_AUTO_DISCOVERY_DEVICE_NAME=CA350
+      - HA_AUTO_DISCOVERY_DEVICE_MANUFACTURER=Zehnder
+      - HA_AUTO_DISCOVERY_DEVICE_MODEL=Comfoair 350
+    restart: always
